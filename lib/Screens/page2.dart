@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/Screens/welcomeScreen.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
@@ -7,38 +8,41 @@ class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-            Text(
-              'Love is the bridge between you ',
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Text(
-              'and everything',
-              style: TextStyle(fontSize: 20),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              'Rumi',
-              style: TextStyle(fontSize: 20, color: Colors.grey),
-            ),
-            Text(
-              'InsightTimer',
-              style: TextStyle(fontSize: 20),
-            ),
-            TextButton(
-              onPressed: null,
-              child: Text('Tap to skip'),
-            ),
-          ])),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        const Text(
+          'Love is the bridge between you ',
+          style: TextStyle(
+            fontSize: 20,
+          ),
+        ),
+        const SizedBox(
+          height: 5,
+        ),
+        const Text(
+          'and everything',
+          style: TextStyle(fontSize: 20),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        const Text(
+          'Rumi',
+          style: TextStyle(fontSize: 20, color: Colors.grey),
+        ),
+        const Text(
+          'InsightTimer',
+          style: TextStyle(fontSize: 20),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const WelcomeScreen()),
+            );
+          },
+          child: const Text('Tap to skip'),
+        ),
+      ])),
     );
   }
 }

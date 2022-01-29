@@ -9,10 +9,10 @@ class WelcomeScreen extends StatelessWidget {
         body: Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text(
+        children: [
+          const Text(
               'Join our community of 19 million people building healthy habits together'),
-          TextButton(
+          const TextButton(
             child: Text(
               "Create an account",
               style: TextStyle(fontSize: 20),
@@ -20,9 +20,14 @@ class WelcomeScreen extends StatelessWidget {
             onPressed: null,
           ),
           TextButton(
-            child: Text(
+            child: const Text(
               "Already a member?",
               style: TextStyle(fontSize: 20),
+            ),
+            style: TextButton.styleFrom(
+              padding: const EdgeInsets.all(16.0),
+              primary: Colors.white,
+              textStyle: const TextStyle(fontSize: 20),
             ),
             onPressed: null,
           )
