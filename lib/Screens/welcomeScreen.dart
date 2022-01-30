@@ -18,12 +18,24 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-                'Join our community of 19 million people building healthy habits together'),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(60.0, 10, 60, 10),
+              child: Text(
+                'Join our community of 19 million people building healthy habits together',
+                style: TextStyle(color: Colors.white, fontSize: 35),
+                textAlign: TextAlign.center,
+              ),
+            ),
             TextButton(
                 child: const Text(
                   "Create an account",
                   style: TextStyle(fontSize: 20),
+                ),
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                  primary: Colors.white,
+                  backgroundColor: Colors.teal,
+                  onSurface: Colors.grey,
                 ),
                 onPressed: () {
                   Navigator.push(
