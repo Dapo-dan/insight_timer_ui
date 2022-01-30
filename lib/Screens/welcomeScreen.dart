@@ -18,6 +18,13 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const CircleAvatar(
+              backgroundImage: AssetImage("images/brownbowl.jpg"),
+              radius: 30,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             const Padding(
               padding: EdgeInsets.fromLTRB(60.0, 10, 60, 10),
               child: Text(
@@ -29,16 +36,17 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            TextButton(
+            ElevatedButton(
                 child: const Text(
                   "Create an account",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
-                style: TextButton.styleFrom(
+                style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
                   minimumSize: const Size(400, 50),
-                  primary: Colors.white,
-                  backgroundColor: Colors.teal,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  primary: Colors.teal,
                   onSurface: Colors.grey,
                 ),
                 onPressed: () {
@@ -51,17 +59,18 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            TextButton(
+            ElevatedButton(
               child: const Text(
                 "Already a member?",
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20, color: Colors.black),
               ),
-              style: TextButton.styleFrom(
+              style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
                 minimumSize: const Size(400, 50),
-                primary: Colors.black,
-                backgroundColor: Colors.white,
-                onSurface: Colors.black,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)),
+                primary: Colors.white,
+                onSurface: Colors.grey,
               ),
               onPressed: null,
             )
