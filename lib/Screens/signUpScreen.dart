@@ -5,32 +5,34 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: const [Text('Sign Up'), Icon(Icons.cancel)],
-        ),
-        const SizedBox(
-          height: 5,
-        ),
-        const Text('Email'),
-        const TextField(
-          obscureText: true,
-          decoration: InputDecoration(
-            border: OutlineInputBorder(),
+    return Scaffold(
+      body: Column(
+        children: [
+          Row(
+            children: const [Text('Sign Up'), Icon(Icons.cancel)],
           ),
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        const Text('Password'),
-        const TextField(
-          obscureText: true,
-          decoration: InputDecoration(
-            border: OutlineInputBorder(),
+          const SizedBox(
+            height: 5,
           ),
-        )
-      ],
+          const Text('Email'),
+          const TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const Text('Password'),
+          const TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
