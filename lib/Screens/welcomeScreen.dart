@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/Screens/signUpScreen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -12,13 +13,17 @@ class WelcomeScreen extends StatelessWidget {
         children: [
           const Text(
               'Join our community of 19 million people building healthy habits together'),
-          const TextButton(
-            child: Text(
-              "Create an account",
-              style: TextStyle(fontSize: 20),
-            ),
-            onPressed: null,
-          ),
+          TextButton(
+              child: const Text(
+                "Create an account",
+                style: TextStyle(fontSize: 20),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SignUpScreen()),
+                );
+              }),
           TextButton(
             child: const Text(
               "Already a member?",

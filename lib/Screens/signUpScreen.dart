@@ -19,6 +19,16 @@ class SignUpScreen extends StatelessWidget {
           decoration: InputDecoration(
             border: OutlineInputBorder(),
           ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        const Text('Password'),
+        const TextField(
+          obscureText: true,
+          decoration: InputDecoration(
+            border: OutlineInputBorder(),
+          ),
         )
       ],
     );
