@@ -26,6 +26,9 @@ class WelcomeScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
             TextButton(
                 child: const Text(
                   "Create an account",
@@ -33,6 +36,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 style: TextButton.styleFrom(
                   padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                  minimumSize: const Size(400, 50),
                   primary: Colors.white,
                   backgroundColor: Colors.teal,
                   onSurface: Colors.grey,
@@ -44,15 +48,20 @@ class WelcomeScreen extends StatelessWidget {
                         builder: (context) => const SignUpScreen()),
                   );
                 }),
+            const SizedBox(
+              height: 10,
+            ),
             TextButton(
               child: const Text(
                 "Already a member?",
                 style: TextStyle(fontSize: 20),
               ),
               style: TextButton.styleFrom(
-                padding: const EdgeInsets.all(16.0),
-                primary: Colors.white,
-                textStyle: const TextStyle(fontSize: 20),
+                padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                minimumSize: const Size(400, 50),
+                primary: Colors.black,
+                backgroundColor: Colors.white,
+                onSurface: Colors.black,
               ),
               onPressed: null,
             )
