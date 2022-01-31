@@ -6,32 +6,42 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: const [Text('Sign Up'), Icon(Icons.cancel)],
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          const Text('Email'),
-          const TextField(
-            obscureText: true,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
+      backgroundColor: Colors.grey[600],
+      body: Container(
+        padding: const EdgeInsets.only(top: 50),
+        color: Colors.white,
+        child: ListView(
+          padding: const EdgeInsets.all(8),
+          children: [
+            Column(
+              children: [
+                Row(
+                  children: const [Text('Sign Up'), Icon(Icons.cancel)],
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                const Text('Email'),
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Text('Password'),
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                  ),
+                )
+              ],
             ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const Text('Password'),
-          const TextField(
-            obscureText: true,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-            ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }
