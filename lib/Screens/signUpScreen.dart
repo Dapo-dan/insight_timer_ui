@@ -9,14 +9,22 @@ class SignUpScreen extends StatelessWidget {
       backgroundColor: Colors.grey[600],
       body: Container(
         padding: const EdgeInsets.only(top: 50),
+        margin: const EdgeInsets.fromLTRB(10, 25, 10, 10),
         color: Colors.white,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+        ),
         child: ListView(
           padding: const EdgeInsets.all(8),
           children: [
             Column(
               children: [
                 Row(
-                  children: const [Text('Sign Up'), Icon(Icons.cancel)],
+                  children: const [
+                    Text('Sign Up'),
+                    Spacer(),
+                    Icon(Icons.cancel)
+                  ],
                 ),
                 const SizedBox(
                   height: 5,
