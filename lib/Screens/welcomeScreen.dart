@@ -68,7 +68,7 @@ class WelcomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
                 minimumSize: const Size(400, 50),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+                    borderRadius: BorderRadius.circular(10)),
                 primary: Colors.white,
                 onSurface: Colors.grey,
               ),

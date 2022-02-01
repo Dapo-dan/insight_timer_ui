@@ -44,7 +44,7 @@ class SignUpScreen extends StatelessWidget {
                 const TextField(
                   obscureText: true,
                   decoration: InputDecoration(
-                    fillColor: Colors.white,
+                    fillColor: Colors.grey,
                     border: OutlineInputBorder(),
                   ),
                 ),
@@ -52,14 +52,18 @@ class SignUpScreen extends StatelessWidget {
                   height: 10,
                 ),
                 const Text('Password'),
+                const SizedBox(
+                  height: 5,
+                ),
                 const TextField(
                   obscureText: true,
                   decoration: InputDecoration(
+                    fillColor: Colors.grey,
                     border: OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 ElevatedButton(
                     child: const Text(
@@ -68,10 +72,89 @@ class SignUpScreen extends StatelessWidget {
                     ),
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
-                      minimumSize: const Size(400, 50),
+                      minimumSize: const Size(430, 50),
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
+                          borderRadius: BorderRadius.circular(10)),
                       primary: Colors.grey,
+                      onSurface: Colors.grey,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SignUpScreen()),
+                      );
+                    }),
+                const SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Divider(
+                      thickness: 1,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text('or'),
+                    SizedBox(width: 5),
+                    Divider(
+                      thickness: 5,
+                      height: 10,
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                ElevatedButton(
+                    child: Wrap(
+                      children: const [
+                        Icon(
+                          Icons.favorite,
+                          color: Colors.pink,
+                          size: 24.0,
+                        ),
+                        Spacer(),
+                        Text(
+                          "Continue with Google",
+                          style: TextStyle(fontSize: 20, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                      minimumSize: const Size(430, 50),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      primary: Colors.white,
+                      onSurface: Colors.grey,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SignUpScreen()),
+                      );
+                    }),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                    child: const Text(
+                      "Continue with Facebook",
+                      style: TextStyle(fontSize: 20, color: Colors.black),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                      minimumSize: const Size(430, 50),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      primary: Colors.white,
                       onSurface: Colors.grey,
                     ),
                     onPressed: () {
