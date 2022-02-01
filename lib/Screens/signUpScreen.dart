@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/CreateAccount/verificationPage.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -82,7 +83,7 @@ class SignUpScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const SignUpScreen()),
+                            builder: (context) => const VerificationPage()),
                       );
                     }),
                 const SizedBox(
