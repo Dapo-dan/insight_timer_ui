@@ -33,7 +33,7 @@ class SignUpScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 const Text(
                   'Email',
@@ -50,7 +50,7 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 const Text('Password'),
                 const SizedBox(
@@ -64,7 +64,7 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 40,
                 ),
                 ElevatedButton(
                     child: const Text(
@@ -87,7 +87,7 @@ class SignUpScreen extends StatelessWidget {
                       );
                     }),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -113,14 +113,16 @@ class SignUpScreen extends StatelessWidget {
                   height: 30,
                 ),
                 ElevatedButton(
-                    child: Wrap(
+                    child: Row(
                       children: const [
                         Icon(
                           Icons.favorite,
                           color: Colors.pink,
                           size: 24.0,
                         ),
-                        Spacer(),
+                        Spacer(
+                          flex: 1,
+                        ),
                         Text(
                           "Continue with Google",
                           style: TextStyle(fontSize: 20, color: Colors.black),
@@ -143,7 +145,7 @@ class SignUpScreen extends StatelessWidget {
                       );
                     }),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 ElevatedButton(
                     child: const Text(
@@ -165,6 +167,16 @@ class SignUpScreen extends StatelessWidget {
                             builder: (context) => const SignUpScreen()),
                       );
                     }),
+                const SizedBox(
+                  height: 40,
+                ),
+                const TextButton(
+                  onPressed: null,
+                  child: Text(
+                    'Already have an account',
+                    style: TextStyle(color: Colors.teal),
+                  ),
+                )
               ],
             ),
           ],
