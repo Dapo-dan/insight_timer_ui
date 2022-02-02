@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:insight_timer_ui/CreateAccount/verificationPage.dart';
+import 'package:insight_timer_ui/CreateAccount/age.dart';
 
 class NamePage extends StatelessWidget {
   const NamePage({Key? key}) : super(key: key);
@@ -9,18 +9,18 @@ class NamePage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text(
+          const Text(
             "What's your name?",
             style: TextStyle(fontSize: 30),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             "We prefer using real names at Insight Timer. It's a trust thing",
             style: TextStyle(fontSize: 15, color: Colors.grey),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Row(
@@ -44,10 +44,10 @@ class NamePage extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             'You can hide your Last name in setting if you like, because we trust you too',
             style: TextStyle(color: Colors.grey),
           ),
@@ -70,8 +70,7 @@ class NamePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const VerificationPage()),
+                      MaterialPageRoute(builder: (context) => const Age()),
                     );
                   }),
             ],

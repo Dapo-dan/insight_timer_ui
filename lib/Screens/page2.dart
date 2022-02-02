@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:insight_timer_ui/Screens/welcomeScreen.dart';
 
-class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
+class IntroPage extends StatelessWidget {
+  const IntroPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

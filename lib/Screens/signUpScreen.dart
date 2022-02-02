@@ -137,13 +137,7 @@ class SignUpScreen extends StatelessWidget {
                       primary: Colors.white,
                       onSurface: Colors.grey,
                     ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SignUpScreen()),
-                      );
-                    }),
+                    onPressed: null),
                 const SizedBox(
                   height: 30,
                 ),
@@ -160,13 +154,7 @@ class SignUpScreen extends StatelessWidget {
                       primary: Colors.white,
                       onSurface: Colors.grey,
                     ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SignUpScreen()),
-                      );
-                    }),
+                    onPressed: null),
                 const SizedBox(
                   height: 40,
                 ),
