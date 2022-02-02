@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:insight_timer_ui/CreateAccount/namePage.dart';
+import 'package:insight_timer_ui/CreateAccount/verificationPage.dart';
+import 'package:insight_timer_ui/Home/homePage.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -74,7 +76,7 @@ class SignUpScreen extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
-                ElevatedButton(
+                OutlinedButton(
                     child: const Text(
                       "Continue",
                       style: TextStyle(fontSize: 20, color: Colors.white),
@@ -120,7 +122,7 @@ class SignUpScreen extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                ElevatedButton(
+                OutlinedButton(
                     child: Row(
                       children: const [
                         Icon(
@@ -147,7 +149,7 @@ class SignUpScreen extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                ElevatedButton(
+                OutlinedButton(
                     child: const Text(
                       "Continue with Facebook",
                       style: TextStyle(fontSize: 20, color: Colors.black),
@@ -164,9 +166,14 @@ class SignUpScreen extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
-                const TextButton(
-                  onPressed: null,
-                  child: Center(
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HomePage()),
+                    );
+                  },
+                  child: const Center(
                     child: Text(
                       'Already have an account',
                       style: TextStyle(color: Colors.teal, fontSize: 20),

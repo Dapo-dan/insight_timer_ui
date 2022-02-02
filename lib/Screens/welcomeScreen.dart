@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/Home/homePage.dart';
 import 'package:insight_timer_ui/Screens/signUpScreen.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -39,7 +40,7 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            ElevatedButton(
+            OutlinedButton(
                 child: const Text(
                   "Create an account",
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -62,7 +63,7 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            ElevatedButton(
+            OutlinedButton(
               child: const Text(
                 "Already a member?",
                 style: TextStyle(fontSize: 20, color: Colors.black),
@@ -75,7 +76,12 @@ class WelcomeScreen extends StatelessWidget {
                 primary: Colors.white,
                 onSurface: Colors.grey,
               ),
-              onPressed: null,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
             )
           ],
         ),

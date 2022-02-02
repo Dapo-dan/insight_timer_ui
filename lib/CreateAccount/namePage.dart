@@ -146,7 +146,7 @@ class NamePage extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              ElevatedButton(
+              OutlinedButton(
                   child: const Text(
                     "Continue",
                     style: TextStyle(fontSize: 20, color: Colors.white),

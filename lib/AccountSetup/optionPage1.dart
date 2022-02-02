@@ -28,6 +28,14 @@ class _OptionPage1State extends State<OptionPage1> {
     Tech("Deeper Sleep", Colors.white, false),
     Tech("Creativity", Colors.white, false),
   ];
+  final List<B> _list = [
+    B("Anxiety", Colors.white, false),
+    B("Sadness", Colors.white, false),
+    B("Stress", Colors.white, false),
+    B("Anger", Colors.white, false),
+    B("Life Changes", Colors.white, false),
+    B("Loneliness", Colors.white, false),
+  ];
   @override
   Widget build(BuildContext context) {
     bool selected = false;
@@ -69,7 +77,7 @@ class _OptionPage1State extends State<OptionPage1> {
                   Text(
                     "Sleep & Wellbeign",
                     style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 20,
                         color: Colors.black,
                         fontWeight: FontWeight.bold),
                   ),
@@ -94,9 +102,9 @@ class _OptionPage1State extends State<OptionPage1> {
                   ),
                   SizedBox(width: 20),
                   Text(
-                    "Sleep & Wellbeign",
+                    "Mental Health & Life Challenges",
                     style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 20,
                         color: Colors.black,
                         fontWeight: FontWeight.bold),
                   ),
@@ -108,13 +116,13 @@ class _OptionPage1State extends State<OptionPage1> {
               Wrap(
                 spacing: 20,
                 direction: Axis.horizontal,
-                children: techChips(),
+                children: Bchips(),
               ),
               const Spacer(),
               const SizedBox(
                 height: 20,
               ),
-              ElevatedButton(
+              OutlinedButton(
                   child: const Text(
                     "Continue",
                     style: TextStyle(fontSize: 20, color: Colors.white),
@@ -148,7 +156,7 @@ class _OptionPage1State extends State<OptionPage1> {
         padding: const EdgeInsets.only(left: 10),
         child: FilterChip(
           label: Text(_chipsList[i].label),
-          labelStyle: const TextStyle(color: Colors.black, fontSize: 25),
+          labelStyle: const TextStyle(color: Colors.black, fontSize: 15),
           backgroundColor: _chipsList[i].color,
           selected: _chipsList[i].isSelected,
           onSelected: (bool value) {
@@ -162,4 +170,33 @@ class _OptionPage1State extends State<OptionPage1> {
     }
     return chips;
   }
+
+  List<Widget> Bchips() {
+    List<Widget> chipsB = [];
+    for (int i = 0; i < _list.length; i++) {
+      Widget item = Padding(
+        padding: const EdgeInsets.only(left: 10),
+        child: FilterChip(
+          label: Text(_list[i].label),
+          labelStyle: const TextStyle(color: Colors.black, fontSize: 15),
+          backgroundColor: _list[i].color,
+          selected: _list[i].isSelected,
+          onSelected: (bool value) {
+            setState(() {
+              _list[i].isSelected = value;
+            });
+          },
+        ),
+      );
+      chipsB.add(item);
+    }
+    return chipsB;
+  }
+}
+
+class B {
+  String label;
+  Color color;
+  bool isSelected;
+  B(this.label, this.color, this.isSelected);
 }

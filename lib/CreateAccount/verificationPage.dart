@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/CreateAccount/namePage.dart';
 
 class VerificationPage extends StatelessWidget {
   const VerificationPage({Key? key}) : super(key: key);
@@ -23,43 +24,96 @@ class VerificationPage extends StatelessWidget {
                 height: 20,
               ),
               Column(
-                children: const [
-                  Icon(Icons.mail),
-                  SizedBox(
+                children: [
+                  const Icon(Icons.mail),
+                  const SizedBox(
                     height: 35,
                   ),
-                  Text(
+                  const Text(
                     "Show us it's you",
                     textAlign: TextAlign.left,
                     style: TextStyle(fontSize: 30),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     "Please verify your email to continue",
                     textAlign: TextAlign.left,
                     style: TextStyle(fontSize: 15, color: Colors.grey),
                   ),
-                  SizedBox(height: 50),
-                  TextField(
-                    autofillHints: <String>[],
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      fillColor: Colors.grey,
-                      border: OutlineInputBorder(),
+                  const SizedBox(height: 50),
+                  Expanded(
+                    child: TextFormField(
+                      style: const TextStyle(
+                        fontSize: 24,
+                        color: Colors.blue,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      decoration: InputDecoration(
+                        focusColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              const BorderSide(color: Colors.blue, width: 1.0),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        fillColor: Colors.grey,
+
+                        hintText: "Email address",
+
+                        //make hint text
+                        hintStyle: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                        ),
+
+                        //create lable
+                        labelText: 'Last Name',
+                        //lable style
+                        labelStyle: const TextStyle(
+                          color: Colors.grey,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 70,
                   ),
-                  TextButton(
+                  const TextButton(
                     onPressed: null,
                     child: Text(
                       "Didn't get an email? Resend.",
                       style: TextStyle(color: Colors.teal, fontSize: 20),
                     ),
-                  )
+                  ),
+                  const Spacer(),
+                  OutlinedButton(
+                      child: const Text(
+                        "Continue",
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                        minimumSize: const Size(430, 50),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        primary: Colors.teal,
+                        onSurface: Colors.grey,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const NamePage()),
+                        );
+                      }),
                 ],
               ),
             ])));

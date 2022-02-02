@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:insight_timer_ui/AccountSetup/optionPage3.dart';
+import 'package:insight_timer_ui/AccountSetup/optionPage4.dart';
 
-class InfoScreen3 extends StatelessWidget {
-  const InfoScreen3({Key? key}) : super(key: key);
+class InfoScreen4 extends StatelessWidget {
+  const InfoScreen4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class InfoScreen3 extends StatelessWidget {
         padding: const EdgeInsets.only(top: 450.0, bottom: 30),
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           const Text(
-            "You'll fit right in.",
+            "You're on the right path!",
             style: TextStyle(
               fontFamily: 'Poppins-Bold',
               fontWeight: FontWeight.bold,
@@ -23,15 +23,11 @@ class InfoScreen3 extends StatelessWidget {
             height: 15,
           ),
           const Text(
-            "Stay inspired with 122,750",
+            "Let the world's top meditation",
             style: TextStyle(fontSize: 20, color: Colors.grey),
           ),
           const Text(
-            "guided meditations, tracks and",
-            style: TextStyle(fontSize: 20, color: Colors.grey),
-          ),
-          const Text(
-            "playlists - all for free.",
+            "teachers take you further",
             style: TextStyle(fontSize: 20, color: Colors.grey),
           ),
           const Spacer(),
@@ -39,7 +35,7 @@ class InfoScreen3 extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const OptionPage3()),
+                MaterialPageRoute(builder: (context) => const OptionPage4()),
               );
             },
             child: const Text('TAP TO CONTINUE'),
