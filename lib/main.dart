@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/CreateAccount/namePage.dart';
 import 'package:insight_timer_ui/Screens/splashScreen.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Raleway',
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const NamePage(),
     );
   }
 }
