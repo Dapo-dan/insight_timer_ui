@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/CreateAccount/age.dart';
 
 class NamePage extends StatelessWidget {
   const NamePage({Key? key}) : super(key: key);
@@ -125,6 +126,45 @@ class NamePage extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                "You can hide your Last name in Settings if you like,",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey,
+                ),
+              ),
+              const Text(
+                "because we trust you too.",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey,
+                ),
+              ),
+              const Spacer(),
+              ElevatedButton(
+                  child: const Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                    minimumSize: const Size(430, 50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    primary: Colors.teal,
+                    onSurface: Colors.grey,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Age()),
+                    );
+                  }),
             ],
           ),
         ),
