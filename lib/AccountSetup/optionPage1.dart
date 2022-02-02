@@ -17,7 +17,7 @@ class Tech {
 
 class _OptionPage1State extends State<OptionPage1> {
   bool selected = false;
-  List<Tech> _chipsList = [
+  final List<Tech> _chipsList = [
     Tech("Sleep", Colors.white, false),
     Tech("Morning Energy", Colors.white, false),
     Tech("Wellbeing", Colors.white, false),
@@ -56,32 +56,59 @@ class _OptionPage1State extends State<OptionPage1> {
                   color: Colors.grey,
                 ),
               ),
-              ListView(
-                children: [
-                  Row(
-                    children: const [
-                      Icon(
-                        Icons.brightness_3,
-                        size: 24.0,
-                      ),
-                      Text(
-                        "Sleep & Wellbeign",
-                        style: TextStyle(fontSize: 20, color: Colors.black),
-                      ),
-                    ],
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: const [
+                  Icon(
+                    Icons.brightness_3_outlined,
+                    size: 24.0,
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Wrap(
-                    spacing: 8,
-                    direction: Axis.horizontal,
-                    children: techChips(),
-                  ),
-                  const SizedBox(
-                    height: 20,
+                  SizedBox(width: 20),
+                  Text(
+                    "Sleep & Wellbeign",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Wrap(
+                spacing: 20,
+                direction: Axis.horizontal,
+                children: techChips(),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: const [
+                  Icon(
+                    Icons.brightness_3_outlined,
+                    size: 24.0,
+                  ),
+                  SizedBox(width: 20),
+                  Text(
+                    "Sleep & Wellbeign",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Wrap(
+                spacing: 20,
+                direction: Axis.horizontal,
+                children: techChips(),
               ),
               const Spacer(),
               const SizedBox(
@@ -118,7 +145,7 @@ class _OptionPage1State extends State<OptionPage1> {
     List<Widget> chips = [];
     for (int i = 0; i < _chipsList.length; i++) {
       Widget item = Padding(
-        padding: const EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 10),
         child: FilterChip(
           label: Text(_chipsList[i].label),
           labelStyle: const TextStyle(color: Colors.black, fontSize: 25),
