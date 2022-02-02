@@ -29,12 +29,15 @@ class WelcomeScreen extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(60.0, 10, 60, 10),
               child: Text(
                 'Join our community of 19 million people building healthy habits together',
-                style: TextStyle(color: Colors.white, fontSize: 35),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 30,
             ),
             ElevatedButton(
                 child: const Text(

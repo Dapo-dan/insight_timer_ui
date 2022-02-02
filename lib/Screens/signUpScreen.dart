@@ -21,12 +21,17 @@ class SignUpScreen extends StatelessWidget {
           padding: const EdgeInsets.all(15),
           children: [
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: const [
                     Text(
                       'Sign Up',
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontFamily: 'Poppins-Bold',
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     Spacer(),
                     Icon(Icons.cancel)
@@ -37,7 +42,7 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 const Text(
                   'Email',
-                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 15, color: Colors.grey),
                 ),
                 const SizedBox(
                   height: 5,
@@ -52,7 +57,10 @@ class SignUpScreen extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text('Password'),
+                const Text(
+                  'Password',
+                  style: TextStyle(fontSize: 15, color: Colors.grey),
+                ),
                 const SizedBox(
                   height: 5,
                 ),
@@ -120,9 +128,7 @@ class SignUpScreen extends StatelessWidget {
                           color: Colors.pink,
                           size: 24.0,
                         ),
-                        Spacer(
-                          flex: 1,
-                        ),
+                        SizedBox(width: 50),
                         Text(
                           "Continue with Google",
                           style: TextStyle(fontSize: 20, color: Colors.black),
@@ -160,9 +166,11 @@ class SignUpScreen extends StatelessWidget {
                 ),
                 const TextButton(
                   onPressed: null,
-                  child: Text(
-                    'Already have an account',
-                    style: TextStyle(color: Colors.teal),
+                  child: Center(
+                    child: Text(
+                      'Already have an account',
+                      style: TextStyle(color: Colors.teal, fontSize: 20),
+                    ),
                   ),
                 )
               ],
