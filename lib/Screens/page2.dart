@@ -10,8 +10,9 @@ class IntroPage extends StatelessWidget {
       body: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         const Text(
-          'Love is the bridge between you ',
+          'Love is the bridge between you',
           style: TextStyle(
+            fontFamily: 'Poppins-Bold',
             fontSize: 20,
           ),
         ),
