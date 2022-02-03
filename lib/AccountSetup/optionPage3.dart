@@ -187,7 +187,7 @@ class _OptionPage3State extends State<OptionPage3> {
                           children: [
                             const SizedBox(width: 10),
                             const Icon(
-                              Icons.person,
+                              Icons.school,
                               size: 24.0,
                             ),
                             const SizedBox(width: 15),
