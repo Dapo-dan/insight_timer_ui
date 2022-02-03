@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight_timer_ui/AccountSetup/personalizePage.dart';
 import 'package:insight_timer_ui/AccountSetup/picturePage.dart';
 import 'package:insight_timer_ui/Screens/splashScreen.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
-      home: const PicturePage(),
+      home: const PersonalizePage(),
     );
   }
 }
