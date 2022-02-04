@@ -151,7 +151,7 @@ class _PersonalizePageState extends State<PersonalizePage>
                                         style: TextStyle(
                                             color: Colors.white, fontSize: 15),
                                       )),
-                                  const Text("Gateway to Prescence",
+                                  const Text("Gateway to Presence",
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 20))
                                 ],

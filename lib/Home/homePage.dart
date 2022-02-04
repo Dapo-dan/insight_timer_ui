@@ -225,9 +225,395 @@ class _HomePageState extends State<HomePage> {
                       onPressed: null)
                 ],
               ),
+              const SizedBox(
+                height: 50,
+              ),
               const Text(
                 'Made for you',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: const DecorationImage(
+                        image: AssetImage("images/1.jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    height: 400,
+                    width: double.infinity,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: const [
+                              IconButton(
+                                  icon: Icon(Icons.favorite_outline_sharp,
+                                      size: 35, color: Colors.black),
+                                  onPressed: null),
+                            ],
+                          ),
+                          const Spacer(),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 20,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Colors.black),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3.0),
+                                  child: Text(
+                                    '10 MIN',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                              const Spacer(),
+                              const Icon(Icons.video_call_rounded,
+                                  color: Colors.black),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.star,
+                        color: Colors.grey,
+                      ),
+                      Text('4.8 ~ GUIDED',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey,
+                          ))
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    'Practicing Gentle kindness towards',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const Text(
+                    'ourselves',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text('Shadow Lawson',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey,
+                      )),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Divider(),
+              const SizedBox(
+                height: 20,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: const DecorationImage(
+                        image: AssetImage("images/2].jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    height: 400,
+                    width: double.infinity,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: const [
+                              IconButton(
+                                  icon: Icon(Icons.favorite_outline_sharp,
+                                      size: 35, color: Colors.black),
+                                  onPressed: null),
+                            ],
+                          ),
+                          const Spacer(),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 20,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Colors.black),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3.0),
+                                  child: Text(
+                                    '18 MIN',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                              const Spacer(),
+                              const Icon(Icons.video_call_rounded,
+                                  color: Colors.black),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.star,
+                        color: Colors.grey,
+                      ),
+                      Text('4.8 ~ GUIDED',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey,
+                          ))
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    'Gateway to Presence',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text('Gloria Shute',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey,
+                      )),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+              const Divider(),
+              const SizedBox(
+                height: 20,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: const DecorationImage(
+                        image: AssetImage("images/3.jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    height: 400,
+                    width: double.infinity,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: const [
+                              IconButton(
+                                  icon: Icon(Icons.favorite_outline_sharp,
+                                      size: 35, color: Colors.black),
+                                  onPressed: null),
+                            ],
+                          ),
+                          const Spacer(),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 20,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Colors.black),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3.0),
+                                  child: Text(
+                                    '20 MIN',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                              const Spacer(),
+                              const Icon(Icons.video_call_rounded,
+                                  color: Colors.black),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.star,
+                        color: Colors.grey,
+                      ),
+                      Text('4.8 ~ GUIDED',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey,
+                          ))
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    'Understanding the process of consistency',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text('Jude Payton',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey,
+                      )),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+              const Divider(),
+              const SizedBox(
+                height: 20,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: const DecorationImage(
+                        image: AssetImage("images/5.jpg"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    height: 400,
+                    width: double.infinity,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: const [
+                              IconButton(
+                                  icon: Icon(
+                                    Icons.favorite_outline_sharp,
+                                    size: 35,
+                                    color: Colors.black,
+                                  ),
+                                  onPressed: null),
+                            ],
+                          ),
+                          const Spacer(),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 20,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: Colors.black),
+                                child: const Padding(
+                                  padding: EdgeInsets.all(3.0),
+                                  child: Text(
+                                    '17 MIN',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                              const Spacer(),
+                              const Icon(
+                                Icons.video_call_rounded,
+                                color: Colors.black,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.star,
+                        color: Colors.grey,
+                      ),
+                      Text('4.8 ~ GUIDED',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey,
+                          ))
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    'Body Scan Relaxation',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text('Andrew Johnson',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey,
+                      )),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
               ),
             ],
           ),
